@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PhishSim Exchange – Security Training Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0e11;
+      color: #eaecef;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .box {
+      background: #161a1e;
+      padding: 30px;
+      border-radius: 8px;
+      width: 320px;
+    }
+    h2 {
+      text-align: center;
+      color: #f0b90b;
+    }
+    input, button {
+      width: 100%;
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 4px;
+      border: none;
+    }
+    button {
+      background: #f0b90b;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .warning {
+      margin-top: 15px;
+      font-size: 12px;
+      color: #f6465d;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<div class="box">
+  <h2>PhishSim Exchange</h2>
+  <form onsubmit="demoOnly(event)">
+    <input type="text" placeholder="Email or User ID" required>
+    <input type="password" placeholder="Password" required>
+    <button type="submit">Log In</button>
+  </form>
+
+  <div class="warning" id="warning">
+    ⚠️ Demo complete. This page simulates a phishing attack.<br>
+    Never enter credentials on unverified websites.
+  </div>
+</div>
+
+<script>
+  function demoOnly(e) {
+    e.preventDefault();
+    document.getElementById("warning").style.display = "block";
+    console.log("Demo submission captured (not stored).");
+  }
+</script>
+
+</body>
+</html>
