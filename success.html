@@ -4,62 +4,51 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Success</title>
-
 <style>
 body {
     background-color: #ffffff;
-    color: #0ECB81;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     font-family: Arial, sans-serif;
     text-align: center;
-    margin: 0;
+    margin:0;
 }
-
 .container {
     max-width: 400px;
 }
-
 h1 {
-    font-size: 26px;
+    font-size: 28px;
     margin-bottom: 15px;
+    color: #0ECB81;
 }
-
 p {
     color: #555;
     font-size: 15px;
 }
-
-/* Cancel Button */
-.cancel-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #000;
-    color: #fff;
+button {
+    margin-top: 20px;
     padding: 12px 20px;
-    border-radius: 8px;
-    font-weight: bold;
     font-size: 14px;
-    text-decoration: none;
-    transition: 0.3s;
+    font-weight: bold;
+    background: #FCD535;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
 }
-
-.cancel-btn:hover {
-    background-color: #333;
+button:hover {
+    background: #e6b800;
 }
 </style>
 </head>
-
 <body>
-<div class="container">
-    <h1>Linked successfully for trade!</h1>
-    <p>Your account has been connected successfully.</p>
-</div>
 
-<a href="#" class="cancel-btn">← CANCEL</a>
+<div class="container">
+    <h1>Account Linked Successfully!</h1>
+    <p>Thank you! Your account details have been received.</p>
+    <button onclick="window.location.href='index.html'">Go Back</button>
+</div>
 
 </body>
 </html>
